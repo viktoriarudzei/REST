@@ -1,0 +1,12 @@
+<div class="container main">
+    <h3>{{title}}</h3>
+    <label for="input">Enter the list: </label>
+    <input id="input" class="form-control" placeholder="Enter numbers..." [(ngModel)]="data.data">
+
+    <label for="inputForN">Enter N: </label>
+    <input id="inputForN" class="form-control" placeholder="Enter N" [(ngModel)]="data.n">
+
+    <button type="button" class="btn btn-primary" (click)="find()">Find result</button>
+
+    <p><span>Result: {{result}}</span></p>
+</div>
